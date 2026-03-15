@@ -102,13 +102,13 @@ spec:
     kind: Deployment
     name: catalogue
   minReplicas: 1
-  maxReplicas: 10
+  maxReplicas: 5
   metrics:
   - type: Resource
     resource:
       name: cpu
       target:
         type: Utilization
-        averageUtilization: 5 # 70 is the real value
+        averageUtilization: 3 # 70 is the real value
 
   # HPS is watching the deployment status always check the CPU status and all
