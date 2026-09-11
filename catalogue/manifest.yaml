@@ -10,7 +10,8 @@ data:
   MONGO_URL: "mongodb://mongodb:27017/catalogue"
 
 
-#---- Statefullset or PV code 
+--- # Deployment code
+
 apiVersion: apps/v1
 kind: Deployment
 metadata:
@@ -111,4 +112,4 @@ spec:
         type: Utilization
         averageUtilization: 3 # 70 is the real value
 
-  # HPS is watching the deployment status always check the CPU status and all
+  # HPA is watching the deployment status always check the CPU status and all
